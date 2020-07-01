@@ -1,0 +1,92 @@
+.footer {
+    padding: 85px 50px 0px 50px;
+    background: url(../img/app/bg.png) center / cover no-repeat;
+
+    &_text {
+        margin-top: 27px;
+        color: $gray;
+        font-family: Roboto, sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0.9px;
+
+        @media (max-width:$md3){
+          text-align: center;
+        }
+    }
+
+    &__logo {
+        @media (max-width: $md3) {
+            text-align: center;
+        }
+    }
+
+    &__body {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: $md2) {
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    &__description {
+        flex: 0 0 50%;
+    }
+
+    &__btn {
+        @media (max-width:$md2){
+          margin-top: 20px;
+        }
+    }
+
+    &__bottom {
+        border-top: 1px solid $light_gray;
+        display: flex;
+        margin-top: 95px;
+        justify-content: space-between;
+        padding: 20px 0px;
+
+        @media (max-width:$md2){
+          margin-top: 50px;
+        }
+
+        @media (max-width:$md3){
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+    }
+
+    &__copyright {
+        color: #fff;
+        font-family: Roboto, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+
+        span {
+            color: $primary;
+        }
+
+        @media (max-width:$md3){
+          margin-bottom: 15px;
+          text-align: center;
+        }
+    }
+
+    &__creator {
+        color: #fff;
+        font-family: Roboto, sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: uppercase;
+
+        span {
+            color: $primary;
+        }
+    }
+}

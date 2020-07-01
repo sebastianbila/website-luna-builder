@@ -1,0 +1,29 @@
+.gallery {
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        width: 25%;
+        height: auto;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+
+        @media (max-width: $md1) {
+            width: 50%;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    @media (max-width: $md4) {
+        display: none;
+    }
+}

@@ -1,0 +1,94 @@
+.services {
+    padding: 90px 50px;
+
+    &__label {
+        text-align: center;
+    }
+
+    @media (max-width: $md3) {
+        padding: 50px 50px;
+    }
+
+    &__body {
+        padding: 60px 0;
+        display: flex;
+        justify-content: center;
+
+        @media (max-width: $md3) {
+            flex-direction: column;
+            align-items: center;
+            padding: 30px 0;
+        }
+    }
+
+    &__footer {
+        text-align: center;
+    }
+
+    &__btn {
+        color: $primary;
+        font-family: Roboto, sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        text-transform: uppercase;
+        border-bottom: 2px solid $primary;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+.item {
+    text-align: center;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+    height: 384px;
+    font-family: Roboto, sanf-serif;
+
+    @media (max-width: $md3) {
+        margin: 0;
+    }
+
+    @media (max-width: $md5) {
+        margin-bottom: 10px;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:nth-child(2) {
+        box-shadow: 0 30px 60px rgba(64, 72, 90, 0.15);
+        background-color: #fff;
+
+        .item__image {
+            position: relative;
+            left: -10px;
+        }
+    }
+
+    &__title {
+        margin-top: 20px;
+        color: $dark_gray;
+        font-family: Roboto, sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 20px 0 15px 0;
+    }
+
+    &__text {
+        color: $light_gray;
+        color: #6a707d;
+        font-family: Roboto, sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+    }
+}
+
